@@ -1,0 +1,44 @@
+.Home {
+    background: rgb(30,30,30);
+    background: linear-gradient(167deg, rgba(30,30,30,1) 30%, rgba(18,18,18,1) 100%);
+    user-select: none;
+    padding: 20px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Home * {
+    font-family: "Lato";
+}
+.Home_Playlist_Header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.Home_Playlist_Header_Title_Button_Wrapper {
+
+}
+.Home_Playlist_Header_Title_Button {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Home_Playlist_Header_Title_Button:hover {
+    text-decoration: underline;
+}
+.Home_Playlist_Header_ShowAll_Button {
+    background-color: transparent;
+    font-size: 14px;
+    color: rgb(164,165,165);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+.Home_Playlist_Header_ShowAll_Button:hover {
+    text-decoration: underline;
+}

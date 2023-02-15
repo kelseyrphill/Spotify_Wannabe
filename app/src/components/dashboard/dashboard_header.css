@@ -1,0 +1,112 @@
+.Dashboard_Header {
+    background-color: blue;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.Dashboard_Header_Nav_Buttons {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Dashboard_Header_Nav_Buttons::after {
+    content: "|";
+    color: white;
+    font-size: 1.5em;
+    margin-left: 22px;
+}
+.Dashboard_Header_Nav_Button {
+    border: none;
+    min-width: 90px;
+    font-family: "Lato Medium";
+    font-weight: 700;
+    background-color: transparent;
+    color: rgb(164,165,165);
+    font-size: 16px;
+    letter-spacing: 1px;
+    height: 90%;
+    user-select: none;
+    padding: 0;
+}
+.Dashboard_Header_Nav_Button:hover {
+    color: white;
+    font-family: "Lato Heavy";
+}
+.Dashboard_Header_User_Buttons {
+    background-color: transparent;
+    justify-self: end;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Dashboard_Header_Login_Button_Wrapper, .Dashboard_Header_Signup_Button_Wrapper {
+    background-color: transparent;
+    min-width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Dashboard_Header_Login_Button {
+    color: rgb(16, 16, 16);
+    font-size: 16px;
+    background-color: white;
+    font-family: "Lato Medium";
+    font-weight: 700;
+    min-width: 106px;
+    border: none;
+    border-radius: 22px;
+    height: 46px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+.Dashboard_Header_Login_Button:hover {
+    font-weight: 800;
+    font-family: "Lato Heavy";
+    height: 47px;
+    width: 107px;
+    background-color: rgb(240, 240, 240);
+}
+.Dashboard_Header_Signup_Button {
+    border: none;
+    min-width: 90px;
+    font-family: "Lato Medium";
+    font-weight: 700;
+    background-color: transparent;
+    color: rgb(164,165,165);
+    font-size: 15px;
+    letter-spacing: 1px;
+    height: 100%;
+    user-select: none;
+}
+.Dashboard_Header_Signup_Button:hover {
+    color: white;
+    font-weight: 800;
+}
+.Dashboard_Header_Page_Buttons {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Dashboard_Header_Page_Button {
+    background-color: rgb(5, 5, 5);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+.Dashboard_Header_User_Controls_Wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

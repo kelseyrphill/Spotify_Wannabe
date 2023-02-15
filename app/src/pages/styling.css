@@ -1,0 +1,131 @@
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	background-color:  #0E0E0E;
+	padding: 14px 30px;
+
+}
+.header .buttons button{
+	color: #7a7a7a;
+	width: 37px;
+	height: 34px;
+	border-radius: 100%;
+	border: 0px;
+	background-color: #000000;
+	margin-right: 15px;
+	margin-top: 10px;
+	cursor: not-allowed;
+}
+.header .searchBar{
+	margin-left: -53%;
+}
+
+.search input{
+	width: 455px;
+	height: 53px;
+	top: 14px;
+	border-radius: 41px;
+	padding-left: 20px;
+	outline: none;
+
+}
+.dropdown{
+	width: auto;
+}
+.header .dropdownBtn{
+	width: 147px;
+	height: 41px;
+	top: 20px;
+	background: #000000;
+	color: white;
+	border-radius: 33px;
+}
+.header .dropdown-menu{
+	background-color:#282828;
+}
+
+.header .dropdown-menu .dropdown-item{
+	color: white;
+}
+.header .dropdown-menu .dropdown-item:hover{
+	background-color: #303030;
+}
+.header .dropdownBtn:hover{
+	background-color: #282828 ;
+	border: none;
+}
+
+.playlists{
+	padding: 0;
+
+}
+.playlists h2{
+	color: #FFFFFF;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.playlists .playlists-list{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.playlists .playlists-list .playlists-item{
+	min-width: 140px;
+	width: 160px;
+	padding: 15px;
+	background: rgb(30,30,30);
+    background: linear-gradient(167deg, rgba(30,30,30,1) 30%, rgba(22,22,22,1) 100%);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all ease 0.4s;
+}
+
+.playlists .playlists-list .playlists-item:hover{
+	background: #252525;
+}
+.playlists .playlists-list .playlists-item img{
+	width: 100%;
+	border-radius: 6px;
+}
+.playlists .playlists-list .playlists-item .play{
+	position: relative;
+}
+.playlists .playlists-list .playlists-item .play .playBtn{
+	position: absolute;
+	right: 10px;
+	top: -60px;
+    width: 44px;
+    height: 44px;
+	background-color: #1db954;
+	border-radius: 100%;
+    border: none;
+	opacity: 0;
+	transition: all ease 0.3s;
+    cursor: default;
+}
+.playlists .playlists-list .playlists-item:hover .play .playBtn{
+	opacity: 1;
+	transform: translateY(-10px);
+}
+.playlists .playlists-list .playlists-item h4{
+	color: #FFFFFF;
+	font-size: 15px;
+    font-weight: 700;
+	margin: 10px 0;
+	white-space: nowrap;
+    text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.playlists .playlists-list .playlists-item p{
+	color: #989898;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+    margin: 0;
+}
+.playlists hr{
+	margin: 70px 0px 0px;
+	border-color: #636363;
+}
