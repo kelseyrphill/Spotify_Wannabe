@@ -57,9 +57,8 @@ body {
 	justify-content: space-between;
 	background-color:  #0E0E0E;
 	padding: 14px 30px;
-
 }
-.header .buttons button{
+.header,.p-header .buttons button{
 	color: #7a7a7a;
 	width: 37px;
 	height: 34px;
@@ -86,25 +85,27 @@ body {
 .dropdown{
 	width: auto;
 }
-.header .dropdownBtn{
+.header,.p-header .dropdownBtn{
 	width: 147px;
 	height: 41px;
 	top: 20px;
 	background: #000000;
 	color: white;
 	border-radius: 33px;
+	border: none;
+
 }
-.header .dropdown-menu{
+.header,.p-header .dropdown-menu{
 	background-color:#282828;
 }
 
-.header .dropdown-menu .dropdown-item{
+.header,.p-header .dropdown-menu .dropdown-item{
 	color: white;
 }
-.header .dropdown-menu .dropdown-item:hover{
+.header,.p-header .dropdown-menu .dropdown-item:hover{
 	background-color: #303030;
 }
-.header .dropdownBtn:hover{
+.header,.p-header .dropdownBtn:hover{
 	background-color: #282828 ;
 	border: none;
 }
@@ -273,8 +274,12 @@ body {
 	margin: 20px;
 	padding-bottom: 1.5rem;
 }
+.form-input1 {
+	margin: 20px;
+	padding-top: 1.5rem;
+}
 
-.form-input input {
+.form-input input, .form-input1 input {
 	background: transparent;
 	border: 0;
 	border-bottom: 1px #fff solid;
@@ -284,7 +289,7 @@ body {
 	font-size: 1rem;
 	color: #fff;
 }
-.form-input input:focus {
+.form-input input:focus,.form-input1 input:focus {
 	outline: 0;
 	border-bottom-color: #1db954;
 }
@@ -303,4 +308,15 @@ form{
 	text-align: center;
 }
 
-/*Create Account*/
+/*PROFILE*/
+.profile-header{
+	background-color: grey;
+}
+.p-header {
+	display: flex;
+	justify-content: space-between;
+	background-color:  grey;
+	padding: 14px 30px;
+	height: 320px;
+}
+
