@@ -57,9 +57,8 @@ body {
 	justify-content: space-between;
 	background-color:  #0E0E0E;
 	padding: 14px 30px;
-
 }
-.header .buttons button{
+.header,.p-header .buttons button{
 	color: #7a7a7a;
 	width: 37px;
 	height: 34px;
@@ -86,25 +85,27 @@ body {
 .dropdown{
 	width: auto;
 }
-.header .dropdownBtn{
+.header,.p-header .dropdownBtn{
 	width: 147px;
 	height: 41px;
 	top: 20px;
 	background: #000000;
 	color: white;
 	border-radius: 33px;
+	border: none;
+
 }
-.header .dropdown-menu{
+.header,.p-header .dropdown-menu{
 	background-color:#282828;
 }
 
-.header .dropdown-menu .dropdown-item{
+.header,.p-header .dropdown-menu .dropdown-item{
 	color: white;
 }
-.header .dropdown-menu .dropdown-item:hover{
+.header,.p-header .dropdown-menu .dropdown-item:hover{
 	background-color: #303030;
 }
-.header .dropdownBtn:hover{
+.header,.p-header .dropdownBtn:hover{
 	background-color: #282828 ;
 	border: none;
 }
@@ -179,11 +180,11 @@ body {
 
 /*LOG IN CSS*/
 
-.login-container {
-	 display: flex;
-	 justify-content: center;
+.login-container,.form-container {
+	display: flex;
+	justify-content: center;
 	flex-direction: column;
-	 align-items: center;
+	align-items: center;
 	height: 400px;
 	width: 300px;
 
@@ -194,19 +195,27 @@ body {
 
 	border: 1px solid rgba(255,255,255,0.1);
 	border-radius: 10px;
- }
 
-.login-container h1{
-	position: absolute;
-	top: 10px;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	color: rgba(255,255,255,0.7);
-	font-family: 'DM Sans', serif;
 }
+
+.login-container h1, .form-container h1{
+	background-color: #0E0E0E;
+	border-radius: 10px;
+	padding: 3px 6px;
+
+	position: absolute;
+	top: -25px;
+	margin: 0;
+	font-family: 'DM Sans', serif;
+	color: #ffff;
+	font-size: 2.2rem;
+
+}
+
+
 .sign-in-btn,
-.create-account-btn {
+.create-account-btn,
+.login-btn{
 	color: white;
 	padding: 10px 20px;
 	margin: 10px;
@@ -221,11 +230,11 @@ body {
 	position: relative;
 	z-index: 1;
 }
-.sign-in-btn:hover,.create-account-btn:hover{
+.sign-in-btn:hover,.create-account-btn:hover, .login-btn:hover{
 	color: #FFFFFF;
-	/*background: #1db954;*/
+	background: #1db954;
 }
-.sign-in-btn:before,.create-account-btn:before{
+.sign-in-btn:before,.create-account-btn:before, .login-btn:before{
 	transition: 0.5s all ease;
 	position: absolute;
 	top: 0;
@@ -236,10 +245,78 @@ body {
 	content: "";
 	background-color: #1db954;
 }
-.sign-in-btn:hover:before,.create-account-btn:hover:before {
+.sign-in-btn:hover:before,.create-account-btn:hover:before, .login-btn:hover:before {
 	transition: 0.5s all ease;
 	left: 0;
 	right: 0;
 	opacity: 1;
 	z-index: -1;
 }
+/*Sign in*/
+
+
+.form-container a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.5);
+
+}
+.form-container a:hover{
+	color: #1db954;
+}
+.login-btn:focus {
+	outline: 0;
+}
+
+.login-btn:active {
+	transform: scale(0.98);
+}
+.form-input {
+	margin: 20px;
+	padding-bottom: 1.5rem;
+}
+.form-input1 {
+	margin: 20px;
+	padding-top: 1.5rem;
+}
+
+.form-input input, .form-input1 input {
+	background: transparent;
+	border: 0;
+	border-bottom: 1px #fff solid;
+	display: block;
+	width: 100%;
+	padding: .5rem;
+	font-size: 1rem;
+	color: #fff;
+}
+.form-input input:focus,.form-input1 input:focus {
+	outline: 0;
+	border-bottom-color: #1db954;
+}
+.login-btn{
+	display: block;
+	margin: 0 auto;
+
+}
+.text {
+	color: rgba(255,255,255,0.7);
+	margin-top: 0.938rem;
+	padding: 1.5rem;
+	font-size: .8rem;
+}
+form{
+	text-align: center;
+}
+
+/*PROFILE*/
+.profile-header{
+	background-color: grey;
+}
+.p-header {
+	display: flex;
+	justify-content: space-between;
+	background-color:  grey;
+	padding: 14px 30px;
+	height: 320px;
+}
+
