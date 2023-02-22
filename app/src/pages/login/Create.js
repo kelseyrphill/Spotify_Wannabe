@@ -32,21 +32,18 @@ function CreateAccount() {
             <h1>Create Account</h1>
             <form onSubmit={handleSubmit}>
                 <div className="form-input1">
-                    <FontAwesomeIcon className='fonts-user' icon={faUser} />
                     <input type="text" placeholder="Username" value={username} onChange={handleUsernameChange} required />
                 </div>
                 <div className="form-input1">
-                    <FontAwesomeIcon className='fonts-email' icon={faEnvelope} />
                     <input type="email" placeholder="Email" value={email} onChange={handleEmailChange} required />
                 </div>
                 <div className="form-input1">
-                    <FontAwesomeIcon className='fonts-pass' icon={faLock} />
                     <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} required />
                 </div>
                 <button type="submit" className="login-btn">
                     Create
                 </button>
-                <p className="text">Already have an account? <Link to="/signin"><FontAwesomeIcon icon={faSignInAlt} /> Sign in here!</Link></p>
+                <p className="text">Already have an account? <Link to="/SignIn"><FontAwesomeIcon icon={faSignInAlt} /> Sign in here!</Link></p>
             </form>
         </div>
     );

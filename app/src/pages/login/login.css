@@ -245,10 +245,7 @@ body {
 }
 .form-input1 {
    margin: 20px;
-   padding-top: 1rem;
-}
-.form-input1 button {
-   padding-top: 1rem;
+   padding-top: 1.5rem;
 }
 
 .form-input input, .form-input1 input {
@@ -280,18 +277,7 @@ form{
    text-align: center;
 }
 /*CREATE ACCOUNT*/
-.fonts-user,.fonts-pass{
-   position: relative;
-   left: -2rem;
-   top: 2rem;
-   z-index: 1;
-}
-.fonts-email{
-   position: relative;
-   top: 2.05rem;
-   left: -3.8rem;
 
-}
 /*PROFILE*/
 .profile-header{
    background-color: grey;

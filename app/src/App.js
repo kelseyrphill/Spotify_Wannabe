@@ -10,6 +10,8 @@ import Dashboard from './components/dashboard/Dashboard';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import Create from "./pages/login/Create";
+import SignIn from "./pages/login/SignIn";
+import Forgot from "./pages/login/Forgot";
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
             <Route path='/'>
                 <Route index path='login' element={<Login />} />
                 <Route index path='create' element={<Create />} />
+                <Route index path='signIn' element={<SignIn />} />
+                <Route index path='forgot' element={<Forgot />} />
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="home" element={<Home />} />
                 </Route>
