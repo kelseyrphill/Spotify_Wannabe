@@ -1,29 +1,37 @@
 import './dashboard_header.css';
-import { useLocation } from 'react-router-dom';
+import {Link, useLocation, useNavigate} from 'react-router-dom';
 import { RxChevronLeft, RxChevronRight } from 'react-icons/rx';
+import React from "react";
 // import { BsPersonCircle, BsCaretDownFill } from 'react-icons/bs';
 // import useAuth from '../simple/useAuth';
 // import { IconContext } from 'react-icons/lib';
 // import { useRef, useState } from 'react';
 // import useLogout from '../simple/useLogout';
-// import { useNavigate } from 'react-router-dom';
 // import aldi_logo from '../official/AL_BLR_LA_MC_RGB.png';
 // import { BiMenu } from 'react-icons/bi';
 // import { AiFillQuestionCircle } from 'react-icons/ai';
 
 const DashHeader = () => {
     const location = useLocation();
+    const navigate = useNavigate();
     // const dialogRef = useRef();
     // const { auth } = useAuth();
     // console.log(name)
     // console.log(auth);
     // const [dropdown, setDropdown] = useState(false);
     // const logout = useLogout();
-    // const navigate = useNavigate();
     // const date = new Date();
     // const signOut = () => {
     //     logout();
     //     navigate('/login');
+    function handleSignInClick() {
+            navigate('/Signin');
+    }
+
+    function handleCreateAccountClick() {
+        navigate('/Create');
+    }
+
     // }
     return (
         <div className='Dashboard_Header' style={location.pathname === "/dashboard/home" ? {backgroundColor: "rgb(16,16,16)"} : {backgroundColor: "rgb(69,80,91)"}}>
@@ -43,10 +51,10 @@ const DashHeader = () => {
                 </div>
                 <div className="Dashboard_Header_User_Buttons">
                     <div className="Dashboard_Header_Signup_Button_Wrapper">
-                        <button type="button" className="Dashboard_Header_Signup_Button">Sign up</button>
+                        <button type="button" className="Dashboard_Header_Signup_Button" onClick={handleCreateAccountClick}>Sign up</button>
                     </div>
                     <div className="Dashboard_Header_Login_Button_Wrapper">
-                        <button type="button" className="Dashboard_Header_Login_Button">Log in</button>
+                        <button type="button" className="Dashboard_Header_Login_Button" onClick={handleSignInClick}> Sign in </button>
                     </div>
                 </div>
             </div>

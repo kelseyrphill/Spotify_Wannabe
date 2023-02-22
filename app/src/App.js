@@ -10,8 +10,9 @@ import Dashboard from './components/dashboard/Dashboard';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import Create from "./pages/login/Create";
-import SignIn from "./pages/login/SignIn";
+import SignIn from "./pages/login/Signin";
 import Forgot from "./pages/login/Forgot";
+import LoggedInHome from "./pages/home/LoggedInHome";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route index path='create' element={<Create />} />
                 <Route index path='signIn' element={<SignIn />} />
                 <Route index path='forgot' element={<Forgot />} />
+                <Route index path='loggedIn' element={<LoggedInHome />} />
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="home" element={<Home />} />
                 </Route>

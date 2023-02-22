@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #0E0E0E !important;
+}
+.sidebar {
+  position: fixed;
+  width: 260px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000000;
+  padding: 24px;
+
+}
+
+.sidebar .nav ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.sidebar .nav ul li{
+  padding: 10px 0px;
+}
+.sidebar .nav .img{
+  margin-right: 10px;
+}
+.sidebar .nav ul li a{
+  font-family: 'DM Sans', serif;
+  font-style: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.06em;
+
+}
+.sidebar .nav a:hover{
+  color: grey;
+}
+
+.main {
+  background: #0E0E0E;
+  margin-left: 260px;
+  margin-bottom: 200px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color:  #0E0E0E;
+  padding: 14px 30px;
+
+}
+.header .buttons button{
+  color: #7a7a7a;
+  width: 37px;
+  height: 34px;
+  border-radius: 100%;
+  border: 0px;
+  background-color: #000000;
+  margin-right: 15px;
+  margin-top: 10px;
+  cursor: not-allowed;
+}
+.header .searchBar{
+  margin-left: -53%;
+}
+
+.search input{
+  width: 455px;
+  height: 53px;
+  top: 14px;
+  border-radius: 41px;
+  padding-left: 20px;
+  outline: none;
+
+}
+.dropdown{
+  width: auto;
+}
+.header .dropdownBtn{
+  width: 147px;
+  height: 41px;
+  top: 20px;
+  background: #000000;
+  color: white;
+  border-radius: 33px;
+}
+.header .dropdown-menu{
+  background-color:#282828;
+}
+
+.header .dropdown-menu .dropdown-item{
+  color: white;
+}
+.header .dropdown-menu .dropdown-item:hover{
+  background-color: #303030;
+}
+.header .dropdownBtn:hover{
+  background-color: #282828 ;
+  border: none;
+}
+
+.playlists{
+  padding: 20px 40px;
+
+}
+.playlists h2{
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.playlists .playlists-list{
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.playlists .playlists-list .playlists-item{
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: #181818;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.playlists .playlists-list .playlists-item:hover{
+  background-color: #252525;
+}
+.playlists .playlists-list .playlists-item img{
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.playlists .playlists-list .playlists-item .play{
+  position: relative;
+}
+.playlists .playlists-list .playlists-item .play .playBtn{
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.playlists .playlists-list .playlists-item:hover .play .playBtn{
+  opacity: 1;
+  transform: translateY(-10px);
+}
+.playlists .playlists-list .playlists-item h4{
+  color: #FFFFFF;
+  font-size: 14px;
+  margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.playlists .playlists-list .playlists-item p{
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.playlists hr{
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+/*LOG IN CSS*/
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+
+.login-container h1, .form-container h1{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'DM Sans', serif;
+  margin-top: -1.875rem;
+  color: #ffff;
+  font-size: 2.2rem;
+
+}
+.sign-in-btn,
+.create-account-btn,
+.login-btn{
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+
+  box-shadow: inset 0 0 0 0 #1db954;
+  transition: ease-out 0.3s;
+  background: none;
+  border: #1db954 solid 1px;
+  position: relative;
+  z-index: 1;
+}
+.sign-in-btn:hover,.create-account-btn:hover, .login-btn:hover{
+  color: #FFFFFF;
+  background: #1db954;
+}
+.sign-in-btn:before,.create-account-btn:before, .login-btn:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #1db954;
+}
+.sign-in-btn:hover:before,.create-account-btn:hover:before, .login-btn:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+/*Sign in*/
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+
+}
+.form-container a:hover{
+  color: #1db954;
+}
+.login-btn:focus {
+  outline: 0;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+.form-input {
+  margin: 20px;
+  padding-bottom: 1.5rem;
+}
+
+.form-input input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px #fff solid;
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+.form-input input:focus {
+  outline: 0;
+  border-bottom-color: #1db954;
+}
+.login-btn{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.text {
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.938rem;
+  padding: 1.5rem;
+  font-size: .8rem;
+}
