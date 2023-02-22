@@ -9,12 +9,14 @@ import Dashboard from './components/dashboard/Dashboard';
 // import SessionExpired from './simple/SessionExpired';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
+import Create from "./pages/login/Create";
 
 function App() {
     return (
         <Routes>
             <Route path='/'>
                 <Route index path='login' element={<Login />} />
+                <Route index path='create' element={<Create />} />
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="home" element={<Home />} />
                 </Route>
