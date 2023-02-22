@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faUser, faEnvelope,faLock, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import {faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import './login.css';
 

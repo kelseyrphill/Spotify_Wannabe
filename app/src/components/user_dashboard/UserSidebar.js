@@ -1,5 +1,5 @@
 import React from 'react';
-import './sidebar.css';
+import '../dashboard/sidebar.css';
 import LibraryImg from '../../imgs/library.png';
 import HomeImg from '../../imgs/Home.png';
 import SearchImg from '../../imgs/Search.png';

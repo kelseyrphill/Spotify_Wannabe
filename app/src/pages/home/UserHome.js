@@ -1,3 +1,6 @@
+
+//Logged in home page
+
 import React from 'react';
 import '../styling.css';
 import './home.css';
@@ -16,8 +19,9 @@ import Album8Img from '../../imgs/albums/8.PNG';
 import Album9Img from '../../imgs/albums/9.PNG';
 import Album10Img from '../../imgs/albums/10.PNG';
 import Album11Img from '../../imgs/albums/11.PNG';
+import LoggedInSidebar from '../../components/user_dashboard/LoggedInSidebar';
 
-const Home = () => {
+const UserHome = () => {
 
     const PlayButton = () => {
         return (
@@ -31,27 +35,6 @@ const Home = () => {
     return (
         <div className="Home">
             <div className="main">
-                {/* <div className="header">
-                    <div className="buttons">
-                        <button type="button" className="fa-solid fa-chevron-left"></button>
-                        <button type="button" className="fa-solid fa-chevron-right"></button>
-                    </div>
-                    <div className="searchBar">
-                        <form className="search">
-                            <input type="text" placeholder="What do you want to listen to?" />
-                        </form>
-                    </div>
-                    <div className="dropdown">
-                        <button className="dropdownBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Raquel <img src={DownArrowImg} />
-                        </button>
-                        <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Account</a></li>
-                            <li><a className="dropdown-item" href="#">Sign Out</a></li>
-                        </ul>
-                    </div>
-                </div> */}
-
                 <div className="playlists">
                     <div className='Home_Playlist_Header'>
                         <div className="Home_Playlist_Header_Title_Button_Wrapper">
@@ -156,4 +139,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default UserHome;
