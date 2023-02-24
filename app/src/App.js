@@ -12,8 +12,9 @@ import Login from './pages/login/Login';
 import Create from "./pages/login/Create";
 import SignIn from "./pages/login/Signin";
 import Forgot from "./pages/login/Forgot";
-import UserDashboard from "./components/user_dashboard/UserDashboard";
 import UserHome from "./pages/home/UserHome";
+import SearchDashboard from "./components/search_dashboard/SearchDashboard";
+import HomeDashboard from "./components/home_dashboard/HomeDashboard";
 
 function App() {
     return (
@@ -25,10 +26,13 @@ function App() {
                 <Route index path='forgot' element={<Forgot />} />
 
                 <Route path="dashboard" element={<Dashboard />}>
-                    <Route path="home" element={<Home />} />
+                    <Route path="new" element={<Home />} />
                 </Route>
-                <Route path="userDashboard" element={<UserDashboard />}>
-                    <Route path="userHome" element={<UserHome />} />
+                <Route path="dashboard" element={<SearchDashboard />}>
+                    <Route path="search" element={<UserHome />} />
+                </Route>
+                <Route path="dashboard" element={<HomeDashboard />}>
+                    <Route path="home" element={<UserHome />} />
                 </Route>
                 {/* <Route path="register" element={<Register />} />
                 <Route path="unauthorized" element={<Unauthorized />} />

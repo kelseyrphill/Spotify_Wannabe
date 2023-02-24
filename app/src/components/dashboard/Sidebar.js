@@ -17,7 +17,7 @@ const Sidebar = () => {
             <div className="Nav">
                 <ul>
                     <li>
-                        <a href="home">
+                        <a href="http://localhost:3000/dashboard/home">
                             <span className="Sidebar_Img">
                                 <AiFillHome style={{verticalAlign: 'middle', color: 'rgb(255, 255, 255)'}} size="1.5em" />
                             </span>
@@ -25,7 +25,7 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="http://localhost:3000/search">
+                        <a href="http://localhost:3000/dashboard/search">
                             <span className="Sidebar_Img">
                                 <RiSearchLine style={{verticalAlign: 'middle', color: 'rgb(255, 255, 255)'}} size="1.5em" />
                             </span>

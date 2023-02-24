@@ -10,7 +10,7 @@
     display: grid;
     grid-template-rows: 65px calc(100% - 65px);
     grid-template-columns: 240px calc(100% - 240px);
-    grid-template-areas: 
+    grid-template-areas:
         "sidebar header"
         "sidebar main";
     position: relative;

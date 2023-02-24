@@ -1,0 +1,36 @@
+.Home_Dashboard_Header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.Home_Dropdown{
+    width: 6%;
+}
+.Home_dropdownBtn{
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 35px;
+    top: 20px;
+    background: #000000;
+    color: white;
+    border-radius: 33px;
+}
+
+.dropdown-menu{
+    background-color:#282828;
+}
+
+.dropdown-menu .dropdown-item{
+    color: white;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: #303030;
+}
+.Search_dropdownBtn:hover{
+    background-color: #282828 ;
+    border: none;
+}

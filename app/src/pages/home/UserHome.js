@@ -19,7 +19,6 @@ import Album8Img from '../../imgs/albums/8.PNG';
 import Album9Img from '../../imgs/albums/9.PNG';
 import Album10Img from '../../imgs/albums/10.PNG';
 import Album11Img from '../../imgs/albums/11.PNG';
-import LoggedInSidebar from '../../components/user_dashboard/LoggedInSidebar';
 
 const UserHome = () => {
 

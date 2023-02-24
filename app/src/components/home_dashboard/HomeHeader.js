@@ -1,10 +1,11 @@
-import '../dashboard/dashboard_header.css';
-
 import { useLocation } from 'react-router-dom';
 import { RxChevronLeft, RxChevronRight } from 'react-icons/rx';
 import DownArrow from "../../imgs/downArrow.png";
 import React from "react";
-
+import './dashboardHome.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { BsPersonCircle, BsCaretDownFill } from 'react-icons/bs';
 // import useAuth from '../simple/useAuth';
 // import { IconContext } from 'react-icons/lib';
@@ -15,7 +16,7 @@ import React from "react";
 // import { BiMenu } from 'react-icons/bi';
 // import { AiFillQuestionCircle } from 'react-icons/ai';
 
-const DashHeader = () => {
+const HomeHeader = () => {
     const location = useLocation();
     // const dialogRef = useRef();
     // const { auth } = useAuth();
@@ -30,7 +31,7 @@ const DashHeader = () => {
     //     navigate('/login');
     // }
     return (
-        <div className='Dashboard_Header' style={location.pathname === "/userdashboard/userhome" ? {backgroundColor: "rgba(30,30,30,1)"} : {backgroundColor: "rgb(69,80,91)"}}>
+        <div className='Home_Dashboard_Header' style={location.pathname === "/dashboard/home" ? {backgroundColor: "rgba(30,30,30,1)"} : {backgroundColor: "rgb(69,80,91)"}}>
             <div className="Dashboard_Header_Page_Buttons">
                 <button type="button" className="Dashboard_Header_Page_Button">
                     <RxChevronLeft style={{verticalAlign: 'middle', color: 'white'}} size='2em' />
@@ -39,21 +40,15 @@ const DashHeader = () => {
                     <RxChevronRight style={{verticalAlign: 'middle', color: 'white'}} size='2em' />
                 </button>
             </div>
-            <div className="searchBar">
-                <form className="search">
-                    <input type="text" placeholder="What do you want to listen to?" />
-                </form>
-            </div>
-            <div className="dropdown">
-                <button className="dropdownBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Raquel
-                    <img  src={DownArrow} className="downArrow" alt="DownArrow" />
 
+            <div className="Search_Dropdown">
+                <button className="Search_dropdownBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Raquel
                 </button>
-                <ul className="dropdown-menu">
+                <div className="dropdown-menu">
                     <li><a className="dropdown-item" href="#">Account</a></li>
-                    <li><a className="dropdown-item" href="#">Sign Out</a></li>
-                </ul>
+                    <li> <a className="dropdown-item" href="#">Sign Out</a></li>
+                </div>
             </div>
         </div>
     )
@@ -90,4 +85,4 @@ const DashHeader = () => {
     // )
 }
 
-export default DashHeader;
+export default HomeHeader;

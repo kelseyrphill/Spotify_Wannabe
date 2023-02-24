@@ -17,44 +17,32 @@
 	margin-top: 10px;
 	cursor: not-allowed;
 }
-.header .searchBar{
-	margin-left: -53%;
-}
 
-.search input{
-	width: 455px;
-	height: 53px;
-	top: 14px;
-	border-radius: 41px;
-	padding-left: 20px;
-	outline: none;
+/*.dropdown{*/
+/*	width: auto;*/
+/*}*/
+/*.header .dropdownBtn{*/
+/*	width: 147px;*/
+/*	height: 41px;*/
+/*	top: 20px;*/
+/*	background: #000000;*/
+/*	color: white;*/
+/*	border-radius: 33px;*/
+/*}*/
+/*.header .dropdown-menu{*/
+/*	background-color:#282828;*/
+/*}*/
 
-}
-.dropdown{
-	width: auto;
-}
-.header .dropdownBtn{
-	width: 147px;
-	height: 41px;
-	top: 20px;
-	background: #000000;
-	color: white;
-	border-radius: 33px;
-}
-.header .dropdown-menu{
-	background-color:#282828;
-}
-
-.header .dropdown-menu .dropdown-item{
-	color: white;
-}
-.header .dropdown-menu .dropdown-item:hover{
-	background-color: #303030;
-}
-.header .dropdownBtn:hover{
-	background-color: #282828 ;
-	border: none;
-}
+/*.header .dropdown-menu .dropdown-item{*/
+/*	color: white;*/
+/*}*/
+/*.header .dropdown-menu .dropdown-item:hover{*/
+/*	background-color: #303030;*/
+/*}*/
+/*.header .dropdownBtn:hover{*/
+/*	background-color: #282828 ;*/
+/*	border: none;*/
+/*}*/
 
 .playlists{
 	padding: 0;
